@@ -2,8 +2,6 @@ package com.borwell.paint.calculator.model;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
-import java.text.DecimalFormat;
-import java.text.NumberFormat;
 
 public class Calculations
 {
@@ -14,7 +12,6 @@ public class Calculations
      * Class constructor
      *
      * @param dimensions - room dimensions in metres
-     * @param coverage   - paint coverage in sq metres per litre
      */
     public Calculations(Dimensions dimensions)
     {
