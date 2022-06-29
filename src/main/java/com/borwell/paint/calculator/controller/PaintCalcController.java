@@ -11,22 +11,21 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class PaintCalcController
 {
-    @GetMapping("/")
+    @GetMapping("/dimensions")
     public String paintForm(Model model){
         model.addAttribute("dimensions", new Dimensions());
-        return "roomDims";
+        return "dimensions";
     }
 
-    @PostMapping("/results")
-    public String paintSubmit(@ModelAttribute Dimensions dimensions, @ModelAttribute double coverage, Model model){
-        Calculations calculations = new Calculations(dimensions, coverage);
+    @PostMapping("/dimensions")
+    public String paintSubmit(@ModelAttribute Dimensions dimensions, Model model){
+        Calculations calculations = new Calculations(dimensions);
 
-        model.addAttribute("coverage", coverage);
         model.addAttribute("dimensions", dimensions);
         model.addAttribute("volume", calculations.roomVolume());
         model.addAttribute("floorArea", calculations.floorArea());
         model.addAttribute("paintRequired", calculations.paintRequired());
 
-        return "result";
+        return "results";
     }
 }
