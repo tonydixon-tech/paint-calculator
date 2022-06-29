@@ -18,6 +18,11 @@ public class Calculations
         this.mDimensions = dimensions;
     }
 
+    public void setmDimensions(Dimensions dimensions)
+    {
+        this.mDimensions = dimensions;
+    }
+
     /**
      * Volume of the room in cubic metres
      *
