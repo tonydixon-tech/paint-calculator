@@ -5,6 +5,6 @@ Requires Java 8 and Maven installed
 
 ### 1. How to run
 ```
-$ git clone [https://github.com/tonydixon-tech/paint-calculator.git]
+$ git clone https://github.com/tonydixon-tech/paint-calculator.git
 $ cd paint-calculator
 $ mvn spring-boot:run
