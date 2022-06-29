@@ -1,15 +1,34 @@
 
-.input-form {
-  border: 25px;
+.input-page {
+  margin: 20px;
   background-color: #ffc;
+  width: 450px;
 }
-.results {
-  border: 20px;
+
+.results-page {
+  margin: 20px;
   background-color: #ffc;
+  width: 450px;
+}
+
+.index-page {
+  margin: 20px;
+  background-color: #ffc;
+  width: 450px;
+}
+
+.error-page {
+  margin: 20px;
+  background-color: #ffc;
+  width: 450px;
+}
+
+.page-heading{
+    margin:15px 15px 15px 15px;
 }
 
 .data-table {
-  margin: .5em;
+  margin: 25px;
   width: 400px;
   padding: 25px;
 }
