@@ -21,8 +21,9 @@ public class CalculationsTest
         when(mDimensions.getHeight()).thenReturn(HEIGHT);
         when(mDimensions.getWidth()).thenReturn(WIDTH);
         when(mDimensions.getLength()).thenReturn(LENGTH);
+        when(mDimensions.getCoverage()).thenReturn(COVERAGE);
 
-        mCalculations = new Calculations(mDimensions, COVERAGE);
+        mCalculations = new Calculations(mDimensions);
     }
 
     @org.junit.After
