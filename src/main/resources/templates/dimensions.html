@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <title>Paint Calculator</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link th:href="@{/styles/main.css}" href="../styles/main.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="input-form">
+        <h4>Input Room Dimensions</h4>
+        <p/>
+        <form action="#" th:action="@{/dimensions}" th:object="${dimensions}" method="post">
+            <table class="data-table">
+                <tr><td>Length (m)</td><td><input type="number" min="1.0" value="1.0" step="0.1" th:field="*{length}" /></td></tr>
+                <tr><td>Width (m)</td><td><input type="number" min="1.0" value="1.0" step="0.1" th:field="*{width}" /></td></tr>
+                <tr><td>Height (m)</td><td><input type="number" min="1.0" value="1.0" step="0.1" th:field="*{height}" /></td></tr>
+                <tr><td>Coverage (m<sup>2</sup>/ltr)</td><td><input type="number" min="1.0" value="1.0" step="0.1" th:field="*{coverage}" /></td></tr>
+                <tr><p></p></tr>
+                <tr>
+                    <td><input type="submit" value="Submit" class="btn btn-primary"/>
+                        <input type="reset" value="Reset" class="btn btn-secondary"/></td>
+                </tr>
+                <tr/>
+            </table>
+        </form>
+    </div>
+    </body>
+</html>

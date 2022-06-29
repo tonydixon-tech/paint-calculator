@@ -1,0 +1,30 @@
+
+.input-form {
+  border: 25px;
+  background-color: #ffc;
+}
+.results {
+  border: 20px;
+  background-color: #ffc;
+}
+
+.data-table {
+  margin: .5em;
+  width: 400px;
+  padding: 25px;
+}
+
+.results-text {
+    maxLength: 8;
+    size: 8;
+}
+
+th {
+  padding: .2em;
+}
+
+td {
+  padding-left: .5em;
+  padding-right: .5em;
+  background-color: #ffc;
+}
