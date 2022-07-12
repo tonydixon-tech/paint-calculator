@@ -6,24 +6,10 @@
     background-repeat: no-repeat;
 }
 
-.input-page {
-  background-color: #ccc;
-  width: 450px;
-}
-
-.results-page {
-  background-color: #ccc;
-  width: 450px;
-}
-
-.index-page {
-  background-color: #ccc;
-  width: 450px;
-}
-
-.error-page {
-  background-color: #ccc;
-  width: 450px;
+.wrapper {
+    background-color: #ccc;
+    width: 450px;
+    height: 470px;
 }
 
 .page-heading{

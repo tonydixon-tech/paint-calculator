@@ -9,24 +9,24 @@
               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-    <div class="banner"></div>
-    <div class="results-page">
-        <h4 class="page-heading">Paint Calculator: Results</h4>
-        <table class="data-table">
-            <tr><td>Length (m)</td><td><input class="results-text" type="text" th:value="${dimensions.length}" readonly/></td></tr>
-            <tr><td>Width (m)</td><td><input class="results-text" type="text" th:value="${dimensions.width}" readonly/></td></tr>
-            <tr><td>Height (m)</td><td><input class="results-text" type="text" th:value="${dimensions.height}" readonly/></td></tr>
-            <tr><td>Coverage (m<sup>2</sup>/ltr)</td><td><input class="results-text" type="text" th:value="${dimensions.coverage}" readonly/></td></tr>
-            <tr><td>Volume (m<sup>3</sup>)</td><td><input class="results-text" type="text" th:value="${volume}" readonly/></td></tr>
-            <tr><td>Floor Area m<sup>2</sup></td><td><input class="results-text" type="text" th:value="${floorArea}" readonly/></td></tr>
-            <tr><td>Paint Req (litres)</td><td><input class="results-text" type="text" th:value="${paintRequired}" readonly/></td></tr>
-        </table>
-        <table>
-            <tr><td><a href="/dimensions">Another Calculation</a></td></tr>
-            <tr><td><a href="/">Index</a></td></tr>
-        </table>
-
-
+    <div class="wrapper">
+        <div class="banner"></div>
+        <div class="results-page">
+            <h4 class="page-heading">Paint Calculator: Results</h4>
+            <table class="data-table">
+                <tr><td>Length (m)</td><td><input class="results-text" type="text" th:value="${dimensions.length}" readonly/></td></tr>
+                <tr><td>Width (m)</td><td><input class="results-text" type="text" th:value="${dimensions.width}" readonly/></td></tr>
+                <tr><td>Height (m)</td><td><input class="results-text" type="text" th:value="${dimensions.height}" readonly/></td></tr>
+                <tr><td>Coverage (m<sup>2</sup>/ltr)</td><td><input class="results-text" type="text" th:value="${dimensions.coverage}" readonly/></td></tr>
+                <tr><td>Volume (m<sup>3</sup>)</td><td><input class="results-text" type="text" th:value="${volume}" readonly/></td></tr>
+                <tr><td>Floor Area m<sup>2</sup></td><td><input class="results-text" type="text" th:value="${floorArea}" readonly/></td></tr>
+                <tr><td>Paint Req (litres)</td><td><input class="results-text" type="text" th:value="${paintRequired}" readonly/></td></tr>
+            </table>
+            <table>
+                <tr><td><a href="/dimensions">Another Calculation</a></td></tr>
+                <tr><td><a href="/">Index</a></td></tr>
+            </table>
+        </div>
     </div>
     </body>
 </html>
