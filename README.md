@@ -8,3 +8,5 @@ Requires Java 8 and Apache Maven installed
 $ git clone https://github.com/tonydixon-tech/paint-calculator.git
 $ cd paint-calculator
 $ mvn spring-boot:run
+
+Open in browser at localhost:8080
