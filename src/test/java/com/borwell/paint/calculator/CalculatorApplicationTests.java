@@ -7,11 +7,13 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootTest
-class CalculatorApplicationTests {
+class CalculatorApplicationTests
+{
 
-	@Test
-	void contextLoads(ApplicationContext context) {
-    assertNotNull(context);
-	}
+    @Test
+    void contextLoads(ApplicationContext context)
+    {
+        assertNotNull(context);
+    }
 
 }
