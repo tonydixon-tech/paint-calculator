@@ -1,6 +1,8 @@
 package com.borwell.paint.calculator.model;
 
-import static org.junit.Assert.*;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
@@ -12,6 +14,7 @@ public class CalculationsTest
     private static final double COVERAGE = 5.0;
     private static final double DELTA = 0.0001;
     private Dimensions mDimensions;
+    @Autowired
     private Calculations mCalculations;
 
     @org.junit.Before

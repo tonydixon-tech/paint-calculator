@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Controller
 public class PaintCalcController
 {
+    private Calculations calculations;
+
     @GetMapping("/dimensions")
     public String paintForm(Model model){
         model.addAttribute("dimensions", new Dimensions());
@@ -19,7 +21,7 @@ public class PaintCalcController
 
     @PostMapping("/dimensions")
     public String paintSubmit(@ModelAttribute Dimensions dimensions, Model model){
-        Calculations calculations = new Calculations(dimensions);
+        calculations = new Calculations(dimensions);
 
         model.addAttribute("dimensions", dimensions);
         model.addAttribute("volume", calculations.roomVolume());
